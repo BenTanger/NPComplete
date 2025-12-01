@@ -1,0 +1,33 @@
+8 28
+a b 16
+a c 16
+a d 34
+a e 31
+a f 35
+a g 48
+a h 29
+b c 30
+b d 37
+b e 36
+b f 18
+b g 38
+b h 31
+c d 37
+c e 30
+c f 31
+c g 17
+c h 26
+d e 49
+d f 27
+d g 12
+d h 23
+e f 17
+e g 48
+e h 22
+f g 35
+f h 33
+g h 47
+
+SOLUTION:
+Cost: 141
+Path: a c g d h e f b a

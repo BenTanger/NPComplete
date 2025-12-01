@@ -1,0 +1,20 @@
+6 15
+a b 36
+a c 12
+a d 27
+a e 22
+a f 50
+b c 28
+b d 21
+b e 24
+b f 45
+c d 41
+c e 36
+c f 17
+d e 32
+d f 24
+e f 41
+
+SOLUTION:
+Cost: 120
+Path: a c f d b e a

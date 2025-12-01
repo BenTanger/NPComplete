@@ -1,23 +1,29 @@
 # Make the inefficient solution that gives the exact right answer to the TPS problems
 
+import sys
+import time
+
 def tsp():
-    # Read in the graph size
-    print("Input graph")
-    data = input().strip().split()
+
+    filename = sys.argv[1]
 
     edges = []
     vertices = set()
 
-    # Read in the graph edges
-    for _ in range(int(data[1])):
-        start, end, weight = input().strip().split()
-        weight = int(weight)
-        edges.append((start, end, weight))
-        vertices.add(start)
-        vertices.add(end)
+    # Read in the graph
+    with open(f'./test_cases/{filename}', "r") as input_file:
+        size = input_file.readline().split()
+        for _ in range(int(size[1])):
+            start, end, weight = input_file.readline().strip().split()
+            weight = int(weight)
+            edges.append((start, end, weight))
+            vertices.add(start)
+            vertices.add(end)
 
     vertices = sorted(vertices)
     length = len(vertices)
+
+    start_time = time.time()
 
     # Set the vertices to an index
     index = {}
@@ -67,12 +73,14 @@ def tsp():
     used[0] = True
     traverse([0], used, 0)
 
-    # Print the cost
-    print("\nSolution")
-    print(best_cost)
+    end_time = time.time()
 
-    # Print the path
     path = [vertices[i] for i in best_path] + [vertices[best_path[0]]]
-    print(" ".join(path))
+
+    # Print out data
+    print(f'Test: {filename}')
+    print(f'Cost: {best_cost}')
+    print(f'Path: {" ".join(path)}')
+    print(f'Runtime: {(end_time - start_time):.7f} seconds\n')
 
 tsp()

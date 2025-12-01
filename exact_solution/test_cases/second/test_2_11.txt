@@ -1,0 +1,60 @@
+11 55
+a b 48
+a c 16
+a d 11
+a e 27
+a f 50
+a g 30
+a h 44
+a i 46
+a j 46
+a k 34
+b c 37
+b d 37
+b e 50
+b f 42
+b g 28
+b h 39
+b i 14
+b j 13
+b k 44
+c d 48
+c e 44
+c f 45
+c g 43
+c h 37
+c i 44
+c j 28
+c k 19
+d e 19
+d f 37
+d g 26
+d h 45
+d i 41
+d j 36
+d k 36
+e f 39
+e g 41
+e h 43
+e i 43
+e j 11
+e k 34
+f g 20
+f h 36
+f i 27
+f j 39
+f k 22
+g h 25
+g i 50
+g j 40
+g k 33
+h i 15
+h j 43
+h k 47
+i j 46
+i k 31
+j k 43
+
+SOLUTION:
+Cost: 185
+Path: a c k f g h i b j e d a

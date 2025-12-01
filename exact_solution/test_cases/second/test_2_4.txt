@@ -1,0 +1,11 @@
+4 6
+a b 21
+a c 28
+a d 17
+b c 18
+b d 46
+c d 21
+
+SOLUTION:
+Cost: 77
+Path: a b c d a
