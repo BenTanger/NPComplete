@@ -1,15 +1,11 @@
 5 10
-a b 16
-a c 11
-a d 50
-a e 45
-b c 49
-b d 23
-b e 33
-c d 37
-c e 21
-d e 15
-
-SOLUTION:
-Cost: 86
-Path: a c e d b a
+a b 15
+a c 23
+a d 38
+a e 41
+b c 24
+b d 19
+b e 39
+c d 49
+c e 49
+d e 21

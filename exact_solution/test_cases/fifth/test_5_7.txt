@@ -1,26 +1,22 @@
 7 21
-a b 16
-a c 50
-a d 45
-a e 24
-a f 50
-a g 41
-b c 44
-b d 26
-b e 45
-b f 20
-b g 29
-c d 29
-c e 25
-c f 34
-c g 17
-d e 35
-d f 20
-d g 14
-e f 26
-e g 37
+a b 30
+a c 38
+a d 23
+a e 25
+a f 23
+a g 38
+b c 12
+b d 25
+b e 24
+b f 44
+b g 20
+c d 18
+c e 42
+c f 18
+c g 45
+d e 29
+d f 42
+d g 40
+e f 44
+e g 35
 f g 42
-
-SOLUTION:
-Cost: 136
-Path: a e c g d f b a
