@@ -1,0 +1,49 @@
+10 45
+a b 48
+a c 28
+a d 27
+a e 46
+a f 26
+a g 41
+a h 48
+a i 26
+a j 31
+b c 33
+b d 49
+b e 48
+b f 46
+b g 49
+b h 27
+b i 41
+b j 32
+c d 49
+c e 40
+c f 42
+c g 34
+c h 41
+c i 43
+c j 38
+d e 47
+d f 41
+d g 47
+d h 49
+d i 45
+d j 36
+e f 44
+e g 27
+e h 27
+e i 44
+e j 44
+f g 48
+f h 48
+f i 37
+f j 26
+g h 50
+g i 41
+g j 33
+h i 48
+h j 41
+i j 48
+
+SOLUTION:
+Path: a d f e b i g h j c a

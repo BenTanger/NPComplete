@@ -1,0 +1,14 @@
+5 10
+a b 47
+a c 45
+a d 32
+a e 46
+b c 31
+b d 39
+b e 39
+c d 33
+c e 28
+d e 30
+
+SOLUTION:
+Path: a d c e b a
