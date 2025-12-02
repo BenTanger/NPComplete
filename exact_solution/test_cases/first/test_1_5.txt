@@ -1,11 +1,11 @@
 5 10
-a b 39
-a c 46
-a d 38
-a e 21
-b c 12
-b d 12
-b e 12
-c d 40
-c e 29
-d e 49
+a b 24
+a c 50
+a d 34
+a e 44
+b c 17
+b d 36
+b e 26
+c d 12
+c e 40
+d e 26

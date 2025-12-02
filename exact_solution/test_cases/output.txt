@@ -1,330 +1,330 @@
 Test: first/test_1_4.txt
-Cost: 148
+Cost: 74
 Path: a b c d a
-Runtime: 0.0000315 seconds
+Runtime: 0.0000410 seconds
 
 Test: second/test_2_4.txt
-Cost: 107
-Path: a c b d a
-Runtime: 0.0000365 seconds
+Cost: 119
+Path: a b c d a
+Runtime: 0.0000460 seconds
 
 Test: third/test_3_4.txt
-Cost: 122
+Cost: 113
 Path: a b c d a
-Runtime: 0.0000348 seconds
+Runtime: 0.0000193 seconds
 
 Test: fourth/test_4_4.txt
-Cost: 154
-Path: a c b d a
-Runtime: 0.0000324 seconds
+Cost: 74
+Path: a b c d a
+Runtime: 0.0000226 seconds
 
 Test: fifth/test_5_4.txt
-Cost: 110
-Path: a b c d a
-Runtime: 0.0000284 seconds
+Cost: 118
+Path: a b d c a
+Runtime: 0.0000346 seconds
 
 Test: first/test_1_5.txt
-Cost: 112
-Path: a d b c e a
-Runtime: 0.0000641 seconds
+Cost: 123
+Path: a b c d e a
+Runtime: 0.0000386 seconds
 
 Test: second/test_2_5.txt
-Cost: 158
-Path: a d b c e a
-Runtime: 0.0000670 seconds
+Cost: 125
+Path: a b e d c a
+Runtime: 0.0000560 seconds
 
 Test: third/test_3_5.txt
-Cost: 123
+Cost: 85
 Path: a b e c d a
-Runtime: 0.0000536 seconds
+Runtime: 0.0000527 seconds
 
 Test: fourth/test_4_5.txt
-Cost: 127
-Path: a b d e c a
-Runtime: 0.0000610 seconds
+Cost: 92
+Path: a d b c e a
+Runtime: 0.0000668 seconds
 
 Test: fifth/test_5_5.txt
-Cost: 135
-Path: a b e d c a
-Runtime: 0.0000849 seconds
+Cost: 110
+Path: a b e c d a
+Runtime: 0.0000629 seconds
 
 Test: first/test_1_6.txt
-Cost: 115
-Path: a c d b e f a
-Runtime: 0.0001750 seconds
+Cost: 132
+Path: a c f b d e a
+Runtime: 0.0001760 seconds
 
 Test: second/test_2_6.txt
-Cost: 137
-Path: a b d f c e a
-Runtime: 0.0001149 seconds
+Cost: 136
+Path: a b d e c f a
+Runtime: 0.0001264 seconds
 
 Test: third/test_3_6.txt
-Cost: 160
-Path: a c e f b d a
-Runtime: 0.0001140 seconds
+Cost: 139
+Path: a c f b e d a
+Runtime: 0.0001948 seconds
 
 Test: fourth/test_4_6.txt
-Cost: 179
-Path: a c b e f d a
-Runtime: 0.0001113 seconds
+Cost: 124
+Path: a c e b f d a
+Runtime: 0.0001073 seconds
 
 Test: fifth/test_5_6.txt
-Cost: 157
-Path: a b e d c f a
-Runtime: 0.0001483 seconds
+Cost: 152
+Path: a b d f e c a
+Runtime: 0.0001402 seconds
 
 Test: first/test_1_7.txt
-Cost: 138
-Path: a c e b d f g a
-Runtime: 0.0004704 seconds
+Cost: 150
+Path: a d e b f c g a
+Runtime: 0.0004556 seconds
 
 Test: second/test_2_7.txt
-Cost: 119
-Path: a d g b f c e a
-Runtime: 0.0003128 seconds
+Cost: 116
+Path: a c b d f g e a
+Runtime: 0.0001721 seconds
 
 Test: third/test_3_7.txt
-Cost: 141
-Path: a c b d f g e a
-Runtime: 0.0003965 seconds
+Cost: 179
+Path: a b g e d c f a
+Runtime: 0.0003510 seconds
 
 Test: fourth/test_4_7.txt
-Cost: 174
-Path: a b f g d c e a
-Runtime: 0.0004456 seconds
+Cost: 131
+Path: a b e d c f g a
+Runtime: 0.0002606 seconds
 
 Test: fifth/test_5_7.txt
-Cost: 160
-Path: a d e g b c f a
-Runtime: 0.0004032 seconds
+Cost: 163
+Path: a b g d e c f a
+Runtime: 0.0004075 seconds
 
 Test: first/test_1_8.txt
-Cost: 143
-Path: a b h d c g f e a
-Runtime: 0.0008101 seconds
+Cost: 151
+Path: a e b c h g d f a
+Runtime: 0.0032694 seconds
 
 Test: second/test_2_8.txt
-Cost: 162
-Path: a f b c e d h g a
-Runtime: 0.0033104 seconds
+Cost: 166
+Path: a c b e d g h f a
+Runtime: 0.0028541 seconds
 
 Test: third/test_3_8.txt
-Cost: 150
-Path: a b c h d g e f a
-Runtime: 0.0015364 seconds
+Cost: 169
+Path: a d c h g e b f a
+Runtime: 0.0023515 seconds
 
 Test: fourth/test_4_8.txt
-Cost: 146
-Path: a c b f h d e g a
-Runtime: 0.0014367 seconds
+Cost: 154
+Path: a g b c e d f h a
+Runtime: 0.0028706 seconds
 
 Test: fifth/test_5_8.txt
-Cost: 153
-Path: a d e c b f h g a
-Runtime: 0.0020568 seconds
+Cost: 128
+Path: a c f h e d b g a
+Runtime: 0.0008104 seconds
 
 Test: first/test_1_9.txt
-Cost: 124
-Path: a e g d f c b i h a
-Runtime: 0.0034478 seconds
+Cost: 180
+Path: a c f i e b h g d a
+Runtime: 0.0146194 seconds
 
 Test: second/test_2_9.txt
-Cost: 167
-Path: a h d c g e b f i a
-Runtime: 0.0122766 seconds
+Cost: 182
+Path: a b d h f e i c g a
+Runtime: 0.0077176 seconds
 
 Test: third/test_3_9.txt
-Cost: 196
-Path: a g d i c b f e h a
-Runtime: 0.0062792 seconds
+Cost: 177
+Path: a c i d e h b f g a
+Runtime: 0.0090287 seconds
 
 Test: fourth/test_4_9.txt
-Cost: 161
-Path: a g e h d c f b i a
-Runtime: 0.0067308 seconds
+Cost: 132
+Path: a h c f d e g b i a
+Runtime: 0.0040045 seconds
 
 Test: fifth/test_5_9.txt
-Cost: 142
-Path: a c h d e b i f g a
-Runtime: 0.0051775 seconds
+Cost: 183
+Path: a g d c h f e b i a
+Runtime: 0.0098279 seconds
 
 Test: first/test_1_10.txt
-Cost: 163
-Path: a e f d b i c g j h a
-Runtime: 0.0426304 seconds
+Cost: 178
+Path: a g b h f j d e c i a
+Runtime: 0.0235302 seconds
 
 Test: second/test_2_10.txt
-Cost: 150
-Path: a h f g b c j d e i a
-Runtime: 0.0146377 seconds
+Cost: 208
+Path: a d h j f i c b g e a
+Runtime: 0.0654607 seconds
 
 Test: third/test_3_10.txt
-Cost: 182
-Path: a e c h g b f d j i a
-Runtime: 0.0184107 seconds
+Cost: 168
+Path: a d e f h g i b c j a
+Runtime: 0.0151234 seconds
 
 Test: fourth/test_4_10.txt
-Cost: 166
-Path: a g i f h e c b d j a
-Runtime: 0.0152175 seconds
+Cost: 187
+Path: a f d c j h g b e i a
+Runtime: 0.0273564 seconds
 
 Test: fifth/test_5_10.txt
-Cost: 198
-Path: a b i e d c j g h f a
-Runtime: 0.0207238 seconds
+Cost: 155
+Path: a c g f e b j h i d a
+Runtime: 0.0216589 seconds
 
 Test: first/test_1_11.txt
-Cost: 213
-Path: a c j f g e d b h i k a
-Runtime: 0.3767941 seconds
+Cost: 217
+Path: a d g h b c k e f j i a
+Runtime: 0.1211100 seconds
 
 Test: second/test_2_11.txt
-Cost: 170
-Path: a c e d k j i b g f h a
-Runtime: 0.0631661 seconds
+Cost: 164
+Path: a b f j e h d k g i c a
+Runtime: 0.0332236 seconds
 
 Test: third/test_3_11.txt
-Cost: 193
-Path: a e j i d h b k g c f a
-Runtime: 0.1338217 seconds
+Cost: 188
+Path: a b h d f e c j g i k a
+Runtime: 0.1289899 seconds
 
 Test: fourth/test_4_11.txt
-Cost: 210
-Path: a f b c k g e i j d h a
-Runtime: 0.2244670 seconds
+Cost: 207
+Path: a f e j b c i k g d h a
+Runtime: 0.2252839 seconds
 
 Test: fifth/test_5_11.txt
-Cost: 159
-Path: a d c h i b f j e k g a
-Runtime: 0.0415154 seconds
+Cost: 146
+Path: a c d i f e k b j g h a
+Runtime: 0.0295374 seconds
 
 Test: first/test_1_12.txt
-Cost: 178
-Path: a j d c i f g k b h e l a
-Runtime: 0.4010532 seconds
+Cost: 150
+Path: a h i j b l c e f g d k a
+Runtime: 0.1524458 seconds
 
 Test: second/test_2_12.txt
-Cost: 176
-Path: a b j f d l i g h k c e a
-Runtime: 0.2060547 seconds
+Cost: 208
+Path: a d h c e b g i k l j f a
+Runtime: 0.3944330 seconds
 
 Test: third/test_3_12.txt
-Cost: 212
-Path: a g b f e c i l d j k h a
-Runtime: 0.9955411 seconds
+Cost: 193
+Path: a b i g l f h j d e k c a
+Runtime: 0.2970648 seconds
 
 Test: fourth/test_4_12.txt
-Cost: 201
-Path: a f g k e i c b l h d j a
-Runtime: 0.4257622 seconds
+Cost: 203
+Path: a e l d j c b g f k i h a
+Runtime: 0.6211917 seconds
 
 Test: fifth/test_5_12.txt
-Cost: 183
-Path: a c b e g f h l j k d i a
-Runtime: 0.5604792 seconds
+Cost: 201
+Path: a d k l i f g j b c e h a
+Runtime: 0.5155945 seconds
 
 Test: first/test_1_13.txt
-Cost: 229
-Path: a c k f e h b i j d l g m a
-Runtime: 6.8098090 seconds
+Cost: 216
+Path: a d e j b m l g i c k f h a
+Runtime: 1.9825914 seconds
 
 Test: second/test_2_13.txt
-Cost: 189
-Path: a b e m j g f i d l k h c a
-Runtime: 1.7097542 seconds
+Cost: 228
+Path: a i h f l c g m e b j d k a
+Runtime: 3.8994868 seconds
 
 Test: third/test_3_13.txt
-Cost: 241
-Path: a b g c l m f i d j h e k a
-Runtime: 5.6273937 seconds
+Cost: 198
+Path: a c g f k d h m i e j b l a
+Runtime: 0.6304893 seconds
 
 Test: fourth/test_4_13.txt
-Cost: 233
-Path: a b f e j k d l i h g m c a
-Runtime: 6.6955922 seconds
+Cost: 203
+Path: a d m g l b c j e h i f k a
+Runtime: 4.6862972 seconds
 
 Test: fifth/test_5_13.txt
-Cost: 228
-Path: a e f i d b c l j k h m g a
-Runtime: 3.1803050 seconds
+Cost: 182
+Path: a e j h c d g i l b m k f a
+Runtime: 1.3819809 seconds
 
 Test: first/test_1_14.txt
-Cost: 203
-Path: a b e d i f l g c m n k h j a
-Runtime: 4.9132245 seconds
+Cost: 219
+Path: a h j f i k b e n d c g m l a
+Runtime: 18.1037495 seconds
 
 Test: second/test_2_14.txt
-Cost: 214
-Path: a e i b g d h f k n j m c l a
-Runtime: 14.0382829 seconds
+Cost: 210
+Path: a d g c m l n e k b h f j i a
+Runtime: 28.3518629 seconds
 
 Test: third/test_3_14.txt
-Cost: 201
-Path: a i l f k h g j m b c d e n a
-Runtime: 9.0291753 seconds
+Cost: 193
+Path: a d c e b f g n i h l k m j a
+Runtime: 5.0349135 seconds
 
 Test: fourth/test_4_14.txt
-Cost: 202
-Path: a h j g e c d b m f l i n k a
-Runtime: 7.3161404 seconds
+Cost: 231
+Path: a k b d i j h n e g m f c l a
+Runtime: 13.1008041 seconds
 
 Test: fifth/test_5_14.txt
-Cost: 185
-Path: a e j d g n k l f h i b c m a
-Runtime: 3.0682533 seconds
+Cost: 247
+Path: a c g k f d n e m h l i b j a
+Runtime: 37.0970104 seconds
 
 Test: first/test_1_15.txt
-Cost: 248
-Path: a f k c i d l m h b n o e j g a
-Runtime: 167.1514442 seconds
+Cost: 225
+Path: a l g b n d h i k e j c m f o a
+Runtime: 45.5048769 seconds
 
 Test: second/test_2_15.txt
-Cost: 196
-Path: a i k c g d f h n b o l e m j a
-Runtime: 15.1415429 seconds
+Cost: 212
+Path: a g n h d e j f o c k b i l m a
+Runtime: 77.6253252 seconds
 
 Test: third/test_3_15.txt
-Cost: 234
-Path: a e m h f o l j d n i b c g k a
-Runtime: 85.5804248 seconds
+Cost: 222
+Path: a e b f c j k g h d i m o n l a
+Runtime: 45.5973997 seconds
 
 Test: fourth/test_4_15.txt
-Cost: 205
-Path: a j f e m b d n h l g k c i o a
-Runtime: 52.0808594 seconds
+Cost: 251
+Path: a b m l c d h k n j o e g f i a
+Runtime: 118.5328948 seconds
 
 Test: fifth/test_5_15.txt
-Cost: 193
-Path: a c m i f k h b d j o n g l e a
-Runtime: 16.6115665 seconds
+Cost: 256
+Path: a c j h b l k m n e o d f i g a
+Runtime: 373.5748491 seconds
 
 Test: first/test_1_16.txt
-Cost: 242
-Path: a i h d n p m j c e f g b l o k a
-Runtime: 414.2697268 seconds
+Cost: 210
+Path: a c o b e g m j h n p l f d i k a
+Runtime: 114.2113869 seconds
 
 Test: second/test_2_16.txt
-Cost: 235
-Path: a b p i o j g c d k h e m l f n a
-Runtime: 198.5333991 seconds
+Cost: 225
+Path: a f e d m i p h k g l b o c j n a
+Runtime: 133.8248632 seconds
 
 Test: third/test_3_16.txt
-Cost: 225
-Path: a l n i o d k f h p g c j b e m a
-Runtime: 169.2562337 seconds
+Cost: 229
+Path: a c p g d b f e k j i m l o n h a
+Runtime: 865.8584509 seconds
 
 Test: fourth/test_4_16.txt
-Cost: 230
-Path: a h d i n e g c p b l f j o k m a
-Runtime: 655.3180401 seconds
+Cost: 214
+Path: a l i b f e g o m p d h c j k n a
+Runtime: 238.2750764 seconds
 
 Test: fifth/test_5_16.txt
-Cost: 232
-Path: a j e i n o m f g c d k b h l p a
-Runtime: 316.5512536 seconds
+Cost: 219
+Path: a f o c g e j n h l p d b k i m a
+Runtime: 176.6700444 seconds
 
 Test: first/test_1_17.txt
-Cost: 235
-Path: a h g c d p m k o n f e l q b j i a
-Runtime: 2331.7701457 seconds
+Cost: 239
+Path: a g k h b p f e o j c n d i l m q a
+Runtime: 1848.6369803 seconds
 
