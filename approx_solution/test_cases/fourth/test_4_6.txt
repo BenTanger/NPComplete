@@ -1,0 +1,19 @@
+6 15
+a b 37
+a c 31
+a d 27
+a e 48
+a f 35
+b c 42
+b d 42
+b e 49
+b f 30
+c d 37
+c e 43
+c f 39
+d e 32
+d f 43
+e f 42
+
+SOLUTION:
+Path: a d e b f c a

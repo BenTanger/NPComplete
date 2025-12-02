@@ -1,0 +1,10 @@
+4 6
+a b 48
+a c 38
+a d 46
+b c 34
+b d 30
+c d 40
+
+SOLUTION:
+Path: a c b d a

@@ -1,0 +1,25 @@
+7 21
+a b 37
+a c 26
+a d 50
+a e 27
+a f 36
+a g 37
+b c 31
+b d 30
+b e 39
+b f 33
+b g 50
+c d 40
+c e 37
+c f 45
+c g 42
+d e 31
+d f 27
+d g 43
+e f 39
+e g 34
+f g 48
+
+SOLUTION:
+Path: a d e c g b f a
