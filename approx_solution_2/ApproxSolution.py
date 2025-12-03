@@ -23,7 +23,7 @@ def calculate_tour_cost(path, index, distance_matrix):
 def main():
     parser = argparse.ArgumentParser(description="Approx TSP with optional restarts")
     parser.add_argument('filename', help='test file under ./test_cases/')
-    parser.add_argument('--time-limit', '-t', type=float, default=10.0, help='time limit in seconds')
+    parser.add_argument('--time_limit', '-t', type=float, default=10.0, help='time limit in seconds')
     parser.add_argument('--parallelism', '-p', type=int, default=1, help='degree of parallelism')
 
     args = parser.parse_args()
@@ -37,7 +37,7 @@ def main():
     vertices = []
 
     # Read in the graph
-    with open(f'./test_cases/{filename}', "r") as input_file:
+    with open(f'./large_test_cases/{filename}', "r") as input_file: # can switch optimal_test_cases for large_test_cases
         size = input_file.readline().split()
         for _ in range(int(size[1])):
             start, end, weight = input_file.readline().strip().split()

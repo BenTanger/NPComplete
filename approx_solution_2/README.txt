@@ -19,15 +19,23 @@ To call the program:
 To run with command line input:
 python cs412_tsp_approx.py 
 
-To run a specific test case:
+To run with test file:
+python3 cs412_tsp_approx.py < test_cases/folder_name/test_{num1}_{num2}.txt
+where folder_name = first, second, third, fourth, fifth
+num1 = 1, 2, 3, 4, 5
+num2 = 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
 
-python ApproxSolution.py file_number/file_name.txt
-(ex. python3 ApproxSolution.py first/test_1_4.txt)
 
 To run generate and run all test_cases:
-
 bash test_cases/run_tests_cases.sh
 
 Input tags:
--t: time limit to not exceed.
+-t: time limit to not exceed
 -p: degrees of parallelism
+
+Example of calling program:
+python3 cs412_tsp_approx.py -p 2 < optimal_test_cases/first/test_1_12.txt
+
+output:
+188
+l a c d g i e f k j h b l

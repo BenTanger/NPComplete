@@ -1,7 +1,7 @@
 4 6
-a b 23
-a c 13
-a d 24
-b c 40
-b d 50
-c d 29
+a b 45
+a c 43
+a d 25
+b c 28
+b d 27
+c d 25
