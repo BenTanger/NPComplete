@@ -20,36 +20,7 @@ def calculate_tour_cost(path, index, distance_matrix):
     total += distance_matrix[index[path[-1]]][index[path[0]]]
     return total
 
-def main():
-    parser = argparse.ArgumentParser(description="Approx TSP with optional restarts")
-    parser.add_argument('filename', help='test file under ./test_cases/')
-    parser.add_argument('--time-limit', '-t', type=float, default=10.0, help='time limit in seconds')
-    parser.add_argument('--parallelism', '-p', type=int, default=1, help='degree of parallelism')
-    parser.add_argument('--restarts', '-r', type=int, default=500, help='Maximum number of restarts')
-
-    args = parser.parse_args()
-
-    filename = args.filename
-    time_limit = args.time_limit
-    degree_parallelism = args.parallelism
-    max_restarts = args.restarts
-
-
-    edges = []
-    vertices = []
-
-    # Read in the graph
-    with open(f'./test_cases/{filename}', "r") as input_file:
-        size = input_file.readline().split()
-        for _ in range(int(size[1])):
-            start, end, weight = input_file.readline().strip().split()
-            weight = int(weight)
-            edges.append((start, end, weight))
-            if start not in vertices:
-                vertices.append(start)
-            if end not in vertices:
-                vertices.append(end)
-
+def tsp(edges, vertices, time_limit):
 
     length = len(vertices)
     index = {}
@@ -60,10 +31,11 @@ def main():
     #Time limit parameters, bigger graphs will iterate longer.
     time_min = 1.0
     time_max = 600.0
-    max_restarts = max(1, length**3) 
-    iterations = max(10, 10 * length**2)
+    max_restarts = max(1, length * 50) 
+    iterations = max(200, length**2)
 
-    time_limit = max(time_min, min(time_max,  length**3))
+    if time_limit is None:
+        time_limit = max(time_min, min(time_max,  length**3))
 
     # Create a matrix with all edges
     distance_matrix = [[0] * length for _ in range(length)]
@@ -75,13 +47,12 @@ def main():
 
     def random_restart(path):
         random.shuffle(path)
-        cur_best = float('inf')
+        cur_best = cur_best = calculate_tour_cost(path, index, distance_matrix)
         n = 0
         no_improvement = 0
         while n < length**2 and no_improvement < iterations:
             new_path = swap(path.copy())
             cur_weight = 0
-            cur_time = 0
             cur_weight = calculate_tour_cost(new_path,index,distance_matrix)
             if cur_weight < cur_best:
                 cur_best = cur_weight
@@ -109,13 +80,29 @@ def main():
     
     closed_path = best_path + [best_path[0]]
 
-    end_time = time.time()
-    #Print out data for testing
-    print(f'Test: {filename}')
-    print(f'Cost: {best_weight}')
-    print(f'Path: {" ".join(best_path)}')
-    print(f'Runtime: {(end_time - start_time):.7f} seconds\n')
+    # program output specifications
+    path_str = " ".join(closed_path)
+    out = f"{best_weight}\n{path_str}"
+    return out
 
+def main():
+    parser = argparse.ArgumentParser(description="Approx TSP with optional time limit")
+    parser.add_argument('--time-limit', '-t', type=float, default=None, help='time limit in seconds')
+    args = parser.parse_args()
+    time_limit = args.time_limit
+
+    edges = []
+    vertices = []
+    n,m = input().split(" ")
+    for _ in range(int(m)):
+            start, end, weight = input().strip().split()
+            weight = int(weight)
+            edges.append((start, end, weight))
+            if start not in vertices:
+                vertices.append(start)
+            if end not in vertices:
+                vertices.append(end)
+    print(tsp(edges, vertices, time_limit))
 
 if __name__ == "__main__":
     main()
