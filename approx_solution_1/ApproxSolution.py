@@ -42,7 +42,7 @@ def tsp():
     best_cost = float('inf')
     best_path = []
     
-    num_iterations = 5000  # Number of random iterations to try
+    num_iterations = 100  # Number of random iterations to try
     
     for iteration in range(num_iterations):
         # Start from a random vertex

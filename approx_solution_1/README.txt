@@ -7,5 +7,9 @@ If in the approx_solution directory:
     To run directly:
     python ApproxSolution.py File_Number/Test_Name.txt
 
+    To run the big graphs directly:
+    python ApproxSolution.py big_graphs/test_5_xxxx.txt
+    (xxxx can be 550, 600, 650 ... 1000)
+
     To Run Script:
     bash test_cases/run_test_cases.sh
