@@ -23,5 +23,5 @@ do
     python cs412_tsp_approx.py < test_cases/fifth/test_5_$i.txt >> test_cases/output.txt -v
 done
 
-echo "Transfering Data"
-python test_cases/transfer.py
+#echo "Transfering Data"
+#python test_cases/transfer.py
