@@ -1,10 +1,7 @@
 4 6
-a b 34
-a c 27
-a d 41
-b c 50
-b d 48
-c d 38
-
-SOLUTION:
-Path: a b d c a
+a b 20
+a c 41
+a d 10
+b c 49
+b d 11
+c d 31

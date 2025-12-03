@@ -1,7 +1,6 @@
-# Greedy approximation solution for the TSP problem
-
 import sys
 import time
+import random
 
 def tsp():
 
@@ -39,41 +38,67 @@ def tsp():
         distance_matrix[index_start][index_end] = weight
         distance_matrix[index_end][index_start] = weight
 
-    # Greedy algorithm: always go to the nearest unvisited city
-    visited = [False] * length
-    path = [0]  # Start from vertex 0
-    visited[0] = True
-    total_cost = 0
-
-    current = 0
-    for _ in range(length - 1):
-        nearest = -1
-        min_distance = float('inf')
+    # Iterative randomized greedy approach: run multiple times with randomness
+    best_cost = float('inf')
+    best_path = []
+    
+    num_iterations = 50  # Number of random iterations to try
+    
+    for iteration in range(num_iterations):
+        # Start from a random vertex
+        start_vertex = random.randint(0, length - 1)
         
-        # Find the nearest unvisited city
-        for next_city in range(length):
-            if not visited[next_city]:
-                if distance_matrix[current][next_city] < min_distance:
-                    min_distance = distance_matrix[current][next_city]
-                    nearest = next_city
+        visited = [False] * length
+        path = [start_vertex]
+        visited[start_vertex] = True
+        total_cost = 0
         
-        # Move to the nearest city
-        visited[nearest] = True
-        path.append(nearest)
-        total_cost += min_distance
-        current = nearest
-
-    # Return to the starting city
-    total_cost += distance_matrix[current][path[0]]
+        current = start_vertex
+        for _ in range(length - 1):
+            # Get all unvisited cities and their distances
+            candidates = []
+            distances = []
+            
+            for next_city in range(length):
+                if not visited[next_city]:
+                    distance = distance_matrix[current][next_city]
+                    if distance != float('inf'):
+                        candidates.append(next_city)
+                        distances.append(distance)
+            
+            if not candidates:
+                break
+            
+            # Sort candidates by distance and select from the top k nearest
+            sorted_pairs = sorted(zip(distances, candidates))
+            k = min(3, len(sorted_pairs))  # Consider top 3 nearest cities
+            top_k = [city for _, city in sorted_pairs[:k]]
+            
+            # Randomly select from top k nearest cities
+            next_city = random.choice(top_k)
+            
+            # Move to the selected city
+            visited[next_city] = True
+            path.append(next_city)
+            total_cost += distance_matrix[current][next_city]
+            current = next_city
+        
+        # Return to the starting city
+        total_cost += distance_matrix[current][path[0]]
+        
+        # Update best solution if this is better
+        if total_cost < best_cost:
+            best_cost = total_cost
+            best_path = path.copy()
 
     end_time = time.time()
 
     # Convert path indices back to vertex names
-    path_names = [vertices[i] for i in path] + [vertices[path[0]]]
+    path_names = [vertices[i] for i in best_path] + [vertices[best_path[0]]]
 
     # Print out data
     print(f'Test: {filename}')
-    print(f'Cost: {total_cost}')
+    print(f'Cost: {best_cost}')
     print(f'Path: {" ".join(path_names)}')
     print(f'Runtime: {(end_time - start_time):.7f} seconds\n')
 

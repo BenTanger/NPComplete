@@ -16,11 +16,6 @@ do
     echo "Running test_3_$i"
     python ApproxSolution.py third/test_3_$i.txt >> test_cases/output.txt
 
-    echo "Running test_4_$i"
-    python ApproxSolution.py fourth/test_4_$i.txt >> test_cases/output.txt
-
-    echo "Running test_5_$i"
-    python ApproxSolution.py fifth/test_5_$i.txt >> test_cases/output.txt
 done
 
 echo "Transfering Data"
