@@ -25,14 +25,12 @@ def main():
     parser.add_argument('filename', help='test file under ./test_cases/')
     parser.add_argument('--time-limit', '-t', type=float, default=10.0, help='time limit in seconds')
     parser.add_argument('--parallelism', '-p', type=int, default=1, help='degree of parallelism')
-    parser.add_argument('--restarts', '-r', type=int, default=500, help='Maximum number of restarts')
 
     args = parser.parse_args()
 
     filename = args.filename
     time_limit = args.time_limit
     degree_parallelism = args.parallelism
-    max_restarts = args.restarts
 
 
     edges = []

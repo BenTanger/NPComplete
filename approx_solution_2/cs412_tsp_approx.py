@@ -20,25 +20,26 @@ def calculate_tour_cost(path, index, distance_matrix):
     total += distance_matrix[index[path[-1]]][index[path[0]]]
     return total
 
-def tsp(edges, vertices, time_limit):
+def tsp(n, edges, vertices, time_limit):
+    #Add checks for n = 0,1,2
 
-    length = len(vertices)
+    n = len(vertices)
     index = {}
-    for i in range(length):
+    for i in range(n):
         index[vertices[i]] = i
     
 
     #Time limit parameters, bigger graphs will iterate longer.
     time_min = 1.0
     time_max = 600.0
-    max_restarts = max(1, length * 50) 
-    iterations = max(200, length**2)
+    max_restarts = n * 50
+    iterations =  100 * n
 
     if time_limit is None:
-        time_limit = max(time_min, min(time_max,  length**3))
+        time_limit = max(time_min, min(time_max,  n**3))
 
     # Create a matrix with all edges
-    distance_matrix = [[0] * length for _ in range(length)]
+    distance_matrix = [[0] * n for _ in range(n)]
     for start, end, weight in edges:
         index_start = index[start]
         index_end = index[end]
@@ -48,9 +49,9 @@ def tsp(edges, vertices, time_limit):
     def random_restart(path):
         random.shuffle(path)
         cur_best = cur_best = calculate_tour_cost(path, index, distance_matrix)
-        n = 0
+        i = 0
         no_improvement = 0
-        while n < length**2 and no_improvement < iterations:
+        while i < n**2 and no_improvement < iterations:
             new_path = swap(path.copy())
             cur_weight = 0
             cur_weight = calculate_tour_cost(new_path,index,distance_matrix)
@@ -60,7 +61,7 @@ def tsp(edges, vertices, time_limit):
                 no_improvement = 0
             else:
                 no_improvement += 1
-            n += 1
+            i += 1
         return cur_best, path
 
 
@@ -102,7 +103,7 @@ def main():
                 vertices.append(start)
             if end not in vertices:
                 vertices.append(end)
-    print(tsp(edges, vertices, time_limit))
+    print(tsp(n, edges, vertices, time_limit))
 
 if __name__ == "__main__":
     main()
