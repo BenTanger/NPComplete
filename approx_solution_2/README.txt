@@ -34,7 +34,7 @@ Input tags:
 -p: degrees of parallelism
 
 Example of calling program:
-python3 cs412_tsp_approx.py -p 2 < optimal_test_cases/first/test_1_12.txt
+python3 cs412_tsp_approx.py -p 2 < test_cases/first/test_1_12.txt
 
 output:
 188
