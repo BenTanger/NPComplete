@@ -1,0 +1,124 @@
+Test: exact_tests/exact_test_1_4.txt
+Cost: 99
+Path: c d b a c
+Runtime: 0.0388517 seconds
+
+Test: exact_tests/exact_test_3_5.txt
+Cost: 111
+Path: e d b c a e
+Runtime: 0.0531118 seconds
+
+Test: exact_tests/exact_test_3_6.txt
+Cost: 159
+Path: a b f e d c a
+Runtime: 0.0685794 seconds
+
+Test: exact_tests/exact_test_3_7.txt
+Cost: 116
+Path: e f a c b g d e
+Runtime: 0.0862095 seconds
+
+Test: exact_tests/exact_test_5_7.txt
+Cost: 177
+Path: b g c f a d e b
+Runtime: 0.0847909 seconds
+
+Test: exact_tests/exact_test_1_8.txt
+Cost: 125
+Path: c d g a b h f e c
+Runtime: 0.1025703 seconds
+
+Test: exact_tests/exact_test_2_8.txt
+Cost: 164
+Path: h c g b d e f a h
+Runtime: 0.1038160 seconds
+
+Test: exact_tests/exact_test_4_8.txt
+Cost: 187
+Path: h f c d g a b e h
+Runtime: 0.1036391 seconds
+
+Test: exact_tests/exact_test_5_9.txt
+Cost: 165
+Path: b i g f c d e h a b
+Runtime: 0.1229794 seconds
+
+Test: exact_tests/exact_test_2_10.txt
+Cost: 201
+Path: h c e i d a j f g b h
+Runtime: 0.1454008 seconds
+
+Test: exact_tests/exact_test_1_11.txt
+Cost: 204
+Path: c k g e a j i h f d b c
+Runtime: 0.1708741 seconds
+
+Test: exact_tests/exact_test_4_11.txt
+Cost: 166
+Path: c g e b f j i k d h a c
+Runtime: 0.1679969 seconds
+
+Test: exact_tests/exact_test_3_12.txt
+Cost: 180
+Path: j b i h d f a g c k e l j
+Runtime: 0.1937172 seconds
+
+Test: exact_tests/exact_test_4_12.txt
+Cost: 178
+Path: a g c d h i k b j e l f a
+Runtime: 0.1935017 seconds
+
+Test: exact_tests/exact_test_5_12.txt
+Cost: 183
+Path: b a g e c f h l i k j d b
+Runtime: 0.1939700 seconds
+
+Test: exact_tests/exact_test_1_13.txt
+Cost: 221
+Path: g b k e f h a l j c m i d g
+Runtime: 0.2199905 seconds
+
+Test: exact_tests/exact_test_4_14.txt
+Cost: 217
+Path: c a f d k m b n i l e h j g c
+Runtime: 0.2500315 seconds
+
+Test: exact_tests/exact_test_5_14.txt
+Cost: 214
+Path: k b l j g i c f m a e d h n k
+Runtime: 0.2462387 seconds
+
+Test: exact_tests/exact_test_2_15.txt
+Cost: 257
+Path: n i b m j a o e g k l c f d h n
+Runtime: 0.2841208 seconds
+
+Test: exact_tests/exact_test_4_15.txt
+Cost: 227
+Path: g e b a i h l k n o d f j m c g
+Runtime: 0.2789478 seconds
+
+Test: exact_tests/exact_test_2_16.txt
+Cost: 257
+Path: k l n m a b p e o h f j g i c d k
+Runtime: 0.3055289 seconds
+
+Test: exact_tests/exact_test_3_16.txt
+Cost: 288
+Path: o g n b k m h f i p d c a l j e o
+Runtime: 0.3079751 seconds
+
+Test: exact_tests/exact_test_5_16.txt
+Cost: 265
+Path: p b m n e h a k o j d c g i l f p
+Runtime: 0.3078585 seconds
+
+Test: exact_tests/exact_test_1_17.txt
+Cost: 258
+Path: h m q a o i j g k l d e b n c p f h
+Runtime: 0.3371389 seconds
+
+Test: exact_tests/exact_test_2_17.txt
+Cost: 260
+Path: f n c m h d q a p l g b e j k i o f
+Runtime: 0.3399477 seconds

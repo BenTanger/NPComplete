@@ -2,22 +2,7 @@ import sys
 import time
 import random
 
-def tsp():
-
-    filename = sys.argv[1]
-
-    edges = []
-    vertices = set()
-
-    # Read in the graph
-    with open(f'./test_cases/{filename}', "r") as input_file:
-        size = input_file.readline().split()
-        for _ in range(int(size[1])):
-            start, end, weight = input_file.readline().strip().split()
-            weight = int(weight)
-            edges.append((start, end, weight))
-            vertices.add(start)
-            vertices.add(end)
+def tsp(edges, vertices):
 
     vertices = sorted(vertices)
     length = len(vertices)
@@ -42,7 +27,7 @@ def tsp():
     best_cost = float('inf')
     best_path = []
     
-    num_iterations = 5000  # Number of random iterations to try
+    num_iterations = 500  # Number of random iterations to try
     
     for iteration in range(num_iterations):
         # Start from a random vertex
@@ -91,15 +76,24 @@ def tsp():
             best_cost = total_cost
             best_path = path.copy()
 
-    end_time = time.time()
-
     # Convert path indices back to vertex names
     path_names = [vertices[i] for i in best_path] + [vertices[best_path[0]]]
 
-    # Print out data
-    print(f'Test: {filename}')
-    print(f'Cost: {best_cost}')
-    print(f'Path: {" ".join(path_names)}')
-    print(f'Runtime: {(end_time - start_time):.7f} seconds\n')
+    path_str = " ".join(path_names)
+    out = f"{best_cost}\n{path_str}"
+    return out
 
-tsp()
+def main():
+    edges = []
+    vertices = set()
+    n, m = input().split(" ")
+    for _ in range(int(m)):
+        start, end, weight = input().strip().split()
+        weight = int(weight)
+        edges.append((start, end, weight))
+        vertices.add(start)
+        vertices.add(end)
+    print(tsp(edges, vertices))
+
+if __name__ == "__main__":
+    main()
