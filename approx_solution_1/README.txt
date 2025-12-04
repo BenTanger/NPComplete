@@ -11,5 +11,9 @@ If in the approx_solution directory:
     python ApproxSolution.py big_graphs/test_5_xxxx.txt
     (xxxx can be 550, 600, 650 ... 1000)
 
+    To run the exact solutions directly:
+    python ApproxSolution.py exact_tests/exact_test_n_v.txt
+    (n = test number and v = vertex amount)
+
     To Run Script:
     bash test_cases/run_test_cases.sh

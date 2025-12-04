@@ -1,0 +1,16 @@
+6 15
+a b 30
+a c 12
+a d 40
+a e 22
+a f 47
+b c 47
+b d 46
+b e 47
+b f 17
+c d 38
+c e 32
+c f 37
+d e 31
+d f 47
+e f 31
