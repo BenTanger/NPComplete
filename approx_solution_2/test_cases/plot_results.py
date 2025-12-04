@@ -30,7 +30,7 @@ def parse_output(path):
 			if line.startswith('Test:'):
 				d['test'] = line.split(':', 1)[1].strip()
 			elif line.startswith('Cost:'):
-				d['cost'] = int(line.split(':', 1)[1].strip())
+				d['cost'] = float(line.split(':', 1)[1].strip())
 			elif line.startswith('Path:'):
 				path_str = line.split(':', 1)[1].strip()
 				tokens = path_str.split()

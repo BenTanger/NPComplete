@@ -2,7 +2,7 @@
 
 import random
 
-for n in range(4, 18):
+for n in range(4, 26):
 
     # 26 vertices: 'a'..'z'
     vertices = [chr(ord('a') + i) for i in range(n)]

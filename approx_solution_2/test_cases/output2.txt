@@ -1,0 +1,550 @@
+vertices: 4
+Cost: 102.0
+Path: d c b a d
+Runtime: 0.1171021 seconds
+
+vertices: 4
+Cost: 86.0
+Path: a c b d a
+Runtime: 0.1089809 seconds
+
+vertices: 4
+Cost: 101.0
+Path: d a b c d
+Runtime: 0.1138670 seconds
+
+vertices: 4
+Cost: 99.0
+Path: c d a b c
+Runtime: 0.1095459 seconds
+
+vertices: 4
+Cost: 166.0
+Path: a b d c a
+Runtime: 0.1151779 seconds
+
+vertices: 5
+Cost: 89.0
+Path: a c b d e a
+Runtime: 0.1323678 seconds
+
+vertices: 5
+Cost: 87.0
+Path: d b a e c d
+Runtime: 0.1335921 seconds
+
+vertices: 5
+Cost: 130.0
+Path: d b a c e d
+Runtime: 0.1351392 seconds
+
+vertices: 5
+Cost: 120.0
+Path: c d e b a c
+Runtime: 0.1361780 seconds
+
+vertices: 5
+Cost: 116.0
+Path: e a b c d e
+Runtime: 0.1357388 seconds
+
+vertices: 6
+Cost: 120.0
+Path: f b a d c e f
+Runtime: 0.1691451 seconds
+
+vertices: 6
+Cost: 131.0
+Path: a e d f c b a
+Runtime: 0.1669838 seconds
+
+vertices: 6
+Cost: 127.0
+Path: d f b c e a d
+Runtime: 0.1667790 seconds
+
+vertices: 6
+Cost: 149.0
+Path: d e f c b a d
+Runtime: 0.1654239 seconds
+
+vertices: 6
+Cost: 99.0
+Path: c e b d f a c
+Runtime: 0.1694920 seconds
+
+vertices: 7
+Cost: 160.0
+Path: e d b f a c g e
+Runtime: 0.2047620 seconds
+
+vertices: 7
+Cost: 111.0
+Path: d a f g e c b d
+Runtime: 0.2051549 seconds
+
+vertices: 7
+Cost: 147.0
+Path: g f e b c a d g
+Runtime: 0.2028089 seconds
+
+vertices: 7
+Cost: 139.0
+Path: a g f d e b c a
+Runtime: 0.2033930 seconds
+
+vertices: 7
+Cost: 130.0
+Path: f g d e a b c f
+Runtime: 0.2084751 seconds
+
+vertices: 8
+Cost: 162.0
+Path: g b c h a f e d g
+Runtime: 0.2573659 seconds
+
+vertices: 8
+Cost: 206.0
+Path: g b c d a h e f g
+Runtime: 0.2571850 seconds
+
+vertices: 8
+Cost: 160.0
+Path: d f b a e c h g d
+Runtime: 0.2569849 seconds
+
+vertices: 8
+Cost: 141.0
+Path: c e f g h d b a c
+Runtime: 0.2600291 seconds
+
+vertices: 8
+Cost: 180.0
+Path: c f a g h d b e c
+Runtime: 0.2592678 seconds
+
+vertices: 9
+Cost: 176.0
+Path: a c b f g d h i e a
+Runtime: 0.3283081 seconds
+
+vertices: 9
+Cost: 163.0
+Path: g h c e d a i f b g
+Runtime: 0.3223071 seconds
+
+vertices: 9
+Cost: 150.0
+Path: a d i f g h e b c a
+Runtime: 0.3305609 seconds
+
+vertices: 9
+Cost: 191.0
+Path: i d b a h g f c e i
+Runtime: 0.3298869 seconds
+
+vertices: 9
+Cost: 159.0
+Path: d i a h f c e g b d
+Runtime: 0.3251228 seconds
+
+vertices: 10
+Cost: 185.0
+Path: h j d a i f c g b e h
+Runtime: 0.4166791 seconds
+
+vertices: 10
+Cost: 188.0
+Path: j h a i g e f b c d j
+Runtime: 0.4074309 seconds
+
+vertices: 10
+Cost: 188.0
+Path: j c b h g d f a i e j
+Runtime: 0.4011831 seconds
+
+vertices: 10
+Cost: 199.0
+Path: e a g b f c d j h i e
+Runtime: 0.4047561 seconds
+
+vertices: 10
+Cost: 167.0
+Path: f h b c g e j i d a f
+Runtime: 0.4092350 seconds
+
+vertices: 11
+Cost: 197.0
+Path: a g b j h k i f d e c a
+Runtime: 0.5092502 seconds
+
+vertices: 11
+Cost: 204.0
+Path: b j c k h f a e i g d b
+Runtime: 0.4993699 seconds
+
+vertices: 11
+Cost: 180.0
+Path: b k f h e a g j i d c b
+Runtime: 0.5088530 seconds
+
+vertices: 11
+Cost: 208.0
+Path: a h g j e k i d b f c a
+Runtime: 0.5034890 seconds
+
+vertices: 11
+Cost: 178.0
+Path: f e d k j i g h a b c f
+Runtime: 0.4982259 seconds
+
+vertices: 12
+Cost: 182.0
+Path: h l a g b i c j k d f e h
+Runtime: 0.6377120 seconds
+
+vertices: 12
+Cost: 190.0
+Path: c l b d j k g a e i h f c
+Runtime: 0.6292729 seconds
+
+vertices: 12
+Cost: 196.0
+Path: l f b i e g k d a c h j l
+Runtime: 0.7903674 seconds
+
+vertices: 12
+Cost: 183.0
+Path: j i a b g h e d k f l c j
+Runtime: 0.6399469 seconds
+
+vertices: 12
+Cost: 194.0
+Path: c b j f k i d e g a h l c
+Runtime: 0.6366911 seconds
+
+vertices: 13
+Cost: 217.0
+Path: e g c a f i l b h j k m d e
+Runtime: 0.7723398 seconds
+
+vertices: 13
+Cost: 182.0
+Path: i k a d f g c j l b h m e i
+Runtime: 0.9180651 seconds
+
+vertices: 13
+Cost: 186.0
+Path: g c m k l e h j i d a f b g
+Runtime: 0.7917547 seconds
+
+vertices: 13
+Cost: 204.0
+Path: f l b e h j m c k a i g d f
+Runtime: 0.7914240 seconds
+
+vertices: 13
+Cost: 200.0
+Path: i m l f h j e d c k b a g i
+Runtime: 0.7849541 seconds
+
+vertices: 14
+Cost: 220.0
+Path: k d a j e f h i m n b g c l k
+Runtime: 1.1907730 seconds
+
+vertices: 14
+Cost: 215.0
+Path: k g a j b n l f m i h c d e k
+Runtime: 1.4490602 seconds
+
+vertices: 14
+Cost: 198.0
+Path: m e g i n a k f b d l j c h m
+Runtime: 1.7550249 seconds
+
+vertices: 14
+Cost: 227.0
+Path: c l e n d a h m i f j g b k c
+Runtime: 1.8763151 seconds
+
+vertices: 14
+Cost: 220.0
+Path: i g f d b e h c n j k m l a i
+Runtime: 1.2072194 seconds
+
+vertices: 15
+Cost: 210.0
+Path: d a o n e b h c j f g k l m i d
+Runtime: 1.1547489 seconds
+
+vertices: 15
+Cost: 210.0
+Path: m i o g n b l k h d j e c a f m
+Runtime: 1.2402380 seconds
+
+vertices: 15
+Cost: 216.0
+Path: e j k d g l a h b c n f o i m e
+Runtime: 1.3223360 seconds
+
+vertices: 15
+Cost: 184.0
+Path: f b n l d e m k h g a c j o i f
+Runtime: 1.1600060 seconds
+
+vertices: 15
+Cost: 231.0
+Path: g a h c n e l k o f m i j b d g
+Runtime: 1.5187740 seconds
+
+vertices: 16
+Cost: 262.0
+Path: f b i d k h g p n l o e a c j m f
+Runtime: 2.2876279 seconds
+
+vertices: 16
+Cost: 234.0
+Path: f i c h k n g l e m p a d j o b f
+Runtime: 1.5555279 seconds
+
+vertices: 16
+Cost: 242.0
+Path: f c h a l i n d j m g p b e o k f
+Runtime: 2.0408552 seconds
+
+vertices: 16
+Cost: 244.0
+Path: o j k h l a p c f e d g b m n i o
+Runtime: 2.1360922 seconds
+
+vertices: 16
+Cost: 240.0
+Path: c n l d a m j b f g k h i e o p c
+Runtime: 2.1381791 seconds
+
+vertices: 17
+Cost: 255.0
+Path: b f i h a d k j n e q o m p g l c b
+Runtime: 2.6938491 seconds
+
+vertices: 17
+Cost: 242.0
+Path: m b a k l n p q g j f e i d h c o m
+Runtime: 3.1793730 seconds
+
+vertices: 17
+Cost: 261.0
+Path: q g j i l f a b c m o h k p d n e q
+Runtime: 2.1138351 seconds
+
+vertices: 17
+Cost: 247.0
+Path: p m n l f g a o q b j d k e h i c p
+Runtime: 1.9187253 seconds
+
+vertices: 17
+Cost: 239.0
+Path: o q c k a h m j d b g e n l p f i o
+Runtime: 5.4550078 seconds
+
+vertices: 18
+Cost: 254.0
+Path: k c p f m o a d h q r i g j e b l n k
+Runtime: 2.7644551 seconds
+
+vertices: 18
+Cost: 267.0
+Path: l g j m o a q f k n b i h p d r e c l
+Runtime: 2.9071512 seconds
+
+vertices: 18
+Cost: 259.0
+Path: j o d e q r l g c i p f k a b n m h j
+Runtime: 4.3974111 seconds
+
+vertices: 18
+Cost: 263.0
+Path: f c d r o j h m p a k l i g n b q e f
+Runtime: 2.5967369 seconds
+
+vertices: 18
+Cost: 261.0
+Path: q e m l b j d h o a i g c p r k n f q
+Runtime: 3.3472641 seconds
+
+vertices: 19
+Cost: 256.0
+Path: r s c g h q o a f b d n p l j i e k m r
+Runtime: 3.3254461 seconds
+
+vertices: 19
+Cost: 270.0
+Path: p f c g s j o i m q r d e n b h a l k p
+Runtime: 3.7197928 seconds
+
+vertices: 19
+Cost: 273.0
+Path: e b l s g i h n d m q o c k r j f p a e
+Runtime: 3.2596140 seconds
+
+vertices: 19
+Cost: 262.0
+Path: k d s j n i q e r m c f g h l b a o p k
+Runtime: 4.2463031 seconds
+
+vertices: 19
+Cost: 275.0
+Path: b k j a q d e l f h r g n p m s c i o b
+Runtime: 2.4998600 seconds
+
+vertices: 20
+Cost: 266.0
+Path: e c f n g o q i a s r l h k t m j d p b e
+Runtime: 4.6733110 seconds
+
+vertices: 20
+Cost: 288.0
+Path: e l h q t s b f a m d k n r c o j p g i e
+Runtime: 4.3931131 seconds
+
+vertices: 20
+Cost: 284.0
+Path: m k n a r d h f j s e i c t q b g o l p m
+Runtime: 5.5585940 seconds
+
+vertices: 20
+Cost: 264.0
+Path: t d r e b k s i f a g n q o m h l c j p t
+Runtime: 7.1000412 seconds
+
+vertices: 20
+Cost: 302.0
+Path: p f k s m n c j r h o q a g i t e l b d p
+Runtime: 5.8513489 seconds
+
+vertices: 21
+Cost: 301.0
+Path: d l m g e a i r c j h n p t o k q u b s f d
+Runtime: 4.6057642 seconds
+
+vertices: 21
+Cost: 301.0
+Path: n f d a i l o c b j s k r p g m q u h t e n
+Runtime: 4.9880631 seconds
+
+vertices: 21
+Cost: 317.0
+Path: q f k a u h s l b o i p g m c n r j t d e q
+Runtime: 3.7495251 seconds
+
+vertices: 21
+Cost: 288.0
+Path: t k q c f p u a g i m l r j e b h d s o n t
+Runtime: 3.5202971 seconds
+
+vertices: 21
+Cost: 275.0
+Path: g l q n f b r p t i u o e d j h k s a m c g
+Runtime: 5.9387531 seconds
+
+vertices: 22
+Cost: 316.0
+Path: l j f m b k n a e c g p h u r v q o i s d t l
+Runtime: 3.5755210 seconds
+
+vertices: 22
+Cost: 315.0
+Path: k t v b i l p u m d e q h n j f c a o r s g k
+Runtime: 4.4399250 seconds
+
+vertices: 22
+Cost: 334.0
+Path: n t c j u g m h r q b p a l o f v s i e d k n
+Runtime: 7.2300200 seconds
+
+vertices: 22
+Cost: 292.0
+Path: d i p c b t j n l k r g m o v f q h a u s e d
+Runtime: 4.1378083 seconds
+
+vertices: 22
+Cost: 295.0
+Path: u b e s f q n a i h j m p k o c g l d r t v u
+Runtime: 3.6021831 seconds
+
+vertices: 23
+Cost: 320.0
+Path: d s o a w j v r c n p g m b e k h q t u i l f d
+Runtime: 4.8365221 seconds
+
+vertices: 23
+Cost: 301.0
+Path: w s o j q c f v b u e t i l n m h a k r p g d w
+Runtime: 8.6900711 seconds
+
+vertices: 23
+Cost: 344.0
+Path: e b n q r s w g u f c h i v a j o p m k d l t e
+Runtime: 7.1735618 seconds
+
+vertices: 23
+Cost: 313.0
+Path: l n v w i u t b f p q m c h s r g a o e j d k l
+Runtime: 4.9954429 seconds
+
+vertices: 23
+Cost: 307.0
+Path: m q w v a u b c j r e p i g o t d l s f n h k m
+Runtime: 10.4353638 seconds
+
+vertices: 24
+Cost: 326.0
+Path: m d a r l x b i e c j s u p v h t n k g w q o f m
+Runtime: 4.8601370 seconds
+
+vertices: 24
+Cost: 344.0
+Path: o w f x g l a h k q b u s n j e d t i v p c m r o
+Runtime: 6.1350811 seconds
+
+vertices: 24
+Cost: 328.0
+Path: l j w t k m b p n a h x o g i d c r s v u q f e l
+Runtime: 11.5184600 seconds
+
+vertices: 24
+Cost: 324.0
+Path: t r v b x w a q o j n p k u g i l s h f d c m e t
+Runtime: 4.6628618 seconds
+
+vertices: 24
+Cost: 353.0
+Path: b w q c f p x j v i s g a e d k r n t h l o m u b
+Runtime: 6.5069299 seconds
+
+vertices: 25
+Cost: 351.0
+Path: e o d s a c u j v n f p t i y m h g b l r w x k q e
+Runtime: 9.1538711 seconds
+
+vertices: 25
+Cost: 321.0
+Path: k l w j h b p s v o i e t q a n m r c y u g x f d k
+Runtime: 6.4971099 seconds
+
+vertices: 25
+Cost: 335.0
+Path: b c a q f d u x l p g k e h n s y r w o t v m i j b
+Runtime: 8.5698891 seconds
+
+vertices: 25
+Cost: 354.0
+Path: g o b j a f e m d w s u n h k p r l i v t x c y q g
+Runtime: 13.0867608 seconds
+
+vertices: 25
+Cost: 357.0
+Path: o p x n t f y g r a j v i q e b h d l w c u m s k o
+Runtime: 8.5854211 seconds
+

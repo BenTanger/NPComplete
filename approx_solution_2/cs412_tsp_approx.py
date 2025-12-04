@@ -21,14 +21,16 @@ def calculate_tour_cost(path, index, distance_matrix):
     total += distance_matrix[index[path[-1]]][index[path[0]]]
     return total
 
-def random_restart(path, index, distance_matrix, iterations, n):
+def random_restart(path, index, distance_matrix, iterations, n, start_time, time_limit):
+        tolerance = 5
         random.shuffle(path)
         cur_best = cur_best = calculate_tour_cost(path, index, distance_matrix)
         i = 0
         no_improvement = 0
-        while i < n**2 and no_improvement < iterations:
+        while time.time() - start_time < time_limit - tolerance and i < n**2 and no_improvement < iterations:
             new_path = swap(path.copy())
             cur_weight = 0
+
             cur_weight = calculate_tour_cost(new_path,index,distance_matrix)
             if cur_weight < cur_best:
                 cur_best = cur_weight
@@ -50,12 +52,14 @@ def tsp(n, edges, vertices, time_limit, degree_parallelism, verbose):
 
     #Time limit parameters, bigger graphs will iterate longer.
     time_min = 1.0
-    time_max = 60.0
-    max_restarts = n * 50
-    iterations =  100 * n
+    time_max = 55.0
+    max_restarts = min(100 * n, 2000)
+    iterations = min(50 * n, 5000)
 
     if time_limit is None:
         time_limit = max(time_min, min(time_max,  n**3))
+    elif time_limit > 1:
+        time_limit -= 1
 
     # Create a matrix with all edges
     distance_matrix = [[0] * n for _ in range(n)]
@@ -78,8 +82,8 @@ def tsp(n, edges, vertices, time_limit, degree_parallelism, verbose):
         pool = multiprocessing.Pool(processes=degree_parallelism)
 
     try:
-        while time.time() - start_time < time_limit and num_restarts < max_restarts:
-            args_list = [(vertices.copy(), index, distance_matrix, iterations, n) for _ in range(degree_parallelism)]
+        while time.time() - start_time < time_limit - 5 and num_restarts < max_restarts:
+            args_list = [(vertices.copy(), index, distance_matrix, iterations, n, start_time, time_limit) for _ in range(degree_parallelism)]
             if use_pool:
                 results = pool.starmap(random_restart, args_list)
             else:
@@ -127,7 +131,7 @@ def main():
     n,m = input().split(" ")
     for _ in range(int(m)):
             start, end, weight = input().strip().split()
-            weight = int(weight)
+            weight = float(weight)
             edges.append((start, end, weight))
             if start not in vertices:
                 vertices.append(start)
